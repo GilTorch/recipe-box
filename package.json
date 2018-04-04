@@ -1,0 +1,22 @@
+{
+  "name": "build-a-recipe-box",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "material-design-lite": "^1.3.0",
+    "node-sass": "^4.8.3",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-scripts": "1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "sass": "node-sass src/App.scss -o src",
+    "sass:watch": "npm run sass && node-sass src/App.scss -wo src",
+    "sass:watch-and-start": "concurrently \"npm run sass:watch\" \"npm start\""
+  }
+}
